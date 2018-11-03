@@ -8,9 +8,12 @@
 
       LXI H, 5000  ;starting address, stores size of array
       MOV C, M     ;store array size in C
+      
       MVI D, 00    ;initialize D to 0
+      
       INX H        ;increment address
       MOV A, M     ;store 1st value in A
+      
 Loop: DCR C        ;decrement counter
       JZ Exit      ;if counter = 0, jump to Exit
       INX H        ;increment address
@@ -18,7 +21,10 @@ Loop: DCR C        ;decrement counter
       JNC Skip     ;if carry is not generated, jump to skip
       INR D        ;increment D (if carry is generated)
 Skip: JMP Loop     ;jump to Loop
+
 Exit: STA 5501     ;store A, lower order answer in memory location 5501
+
       MOV A, D     ;move higher order (D) into A
       STA 5500     ;store A, higher order answer in memory location 5500
+      
       HLT          ;HALT program
