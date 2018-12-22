@@ -1,5 +1,7 @@
 # 8085
 
+[![HitCount](http://hits.dwyl.io/ashwek/8085.svg)](http://hits.dwyl.io/ashwek/8085)
+
 [Wikipedia : Intel 8085](https://en.wikipedia.org/wiki/Intel_8085 "Wikipedia : Intel 8085")
 
 The Intel 8085 is an 8-bit microprocessor produced by Intel.
