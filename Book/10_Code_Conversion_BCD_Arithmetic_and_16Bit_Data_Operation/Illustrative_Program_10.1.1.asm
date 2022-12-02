@@ -33,7 +33,7 @@ BCDBIN: PUSH D       ;Push D to stack
         MOV C, A     ;C = A
 
         MOV A, B     ;A = B
-        ANI 0F0H     ;A and F0H (Mask lower nibble)
+        ANI F0H     ;A and F0H (Mask lower nibble)
         RRC          ;Rotate Right (Withour carry)
         RRC          ;Rotate Right (Withour carry)
         RRC          ;Rotate Right (Withour carry)
