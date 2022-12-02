@@ -34,10 +34,10 @@ BCDBIN: PUSH D       ;Push D to stack
 
         MOV A, B     ;A = B
         ANI 0F0H     ;A and F0H (Mask lower nibble)
-        RRC          ;Rotate Right (Withour carry)
-        RRC          ;Rotate Right (Withour carry)
-        RRC          ;Rotate Right (Withour carry)
-        RRC          ;Rotate Right (Withour carry)
+        RRC          ;Rotate Right (Without carry)
+        RRC          ;Rotate Right (Without carry)
+        RRC          ;Rotate Right (Without carry)
+        RRC          ;Rotate Right (Without carry)
 
         MVI D, 0AH   ;D = 0AH (Multiplier D = 10)
         MOV E, A     ;E = A
